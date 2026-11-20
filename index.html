@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Emoji Mario</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="game-wrap">
+    <!-- HUD -->
+    <div id="hud">
+      <span class="hud-item">SCORE&nbsp;<b id="hud-score">00000</b></span>
+      <span class="hud-item">COINS&nbsp;<b id="hud-coins">×00</b> 🪙</span>
+      <span class="hud-item">LIVES&nbsp;<b id="hud-lives">❤️❤️❤️</b></span>
+      <span class="hud-item hud-mute" id="hud-mute">SOUND ON 🔊</span>
+    </div>
+
+    <!-- Canvas -->
+    <canvas id="game" width="800" height="450"></canvas>
+
+    <!-- Overlay screens (READY / WIN / GAMEOVER) -->
+    <div id="overlay" class="hidden">
+      <h1 id="overlay-title">SUPER EMOJI MARIO</h1>
+      <p id="overlay-msg">Press SPACE to start</p>
+    </div>
+  </div>
+
+  <!-- Load order matters: classic scripts attach to window.MARIO namespace -->
+  <script src="js/config.js"></script>
+  <script src="js/input.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/physics.js"></script>
+  <script src="js/entities.js"></script>
+  <script src="js/level.js"></script>
+  <script src="js/camera.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

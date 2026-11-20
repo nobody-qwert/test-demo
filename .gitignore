@@ -1,0 +1,52 @@
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ---- Windows ----
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---- Linux ----
+*~
+
+# ---- Editors & IDEs ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ---- Logs & crash dumps ----
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- Dependency dirs (in case a build tool is ever added) ----
+node_modules/
+bower_components/
+jspm_packages/
+
+# ---- Build output / dist ----
+dist/
+build/
+out/
+.tmp/
+.cache/
+
+# ---- Environment / secrets ----
+.env
+.env.*
+!.env.example
+
+# ---- Local scratch / personal notes ----
+*.local
+TODO.local.md
